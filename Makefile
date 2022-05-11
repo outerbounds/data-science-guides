@@ -1,5 +1,5 @@
 update:
-	cd ../docs/ && make update
+	cd ../docs/ && git pull && make update
 
 copy:
 	rm -rf docs/
