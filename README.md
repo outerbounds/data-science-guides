@@ -4,4 +4,4 @@ Code Snippets For [The Outerbounds Docs](https://outerbounds.com/docs)
 
 ## To Update
 
-Run `make sync`
+Run `make all`
