@@ -5,9 +5,13 @@ import xgboost as xgb
 import numpy as np
 
 class MagicDirFlow(FlowSpec):
+    '''
+    Read and write `mydir` directory as flow artifact. 
+    '''
 
+    # Anything you save into mydir/ will be saved as a Data Artifact
     #highlight-next-line
-    @magicdir(dir='mydir') # Anything you save into mydir/ will be saved as a Data Artifact
+    @magicdir(dir='mydir') 
     @step
     def start(self):
         dmatrix_1 = xgb.DMatrix(np.random.rand(5, 10))
@@ -18,8 +22,9 @@ class MagicDirFlow(FlowSpec):
         #highlight-end
         self.next(self.end)
     
+    # This allows you to access anything previously saved into mydir/
     #highlight-next-line
-    @magicdir(dir='mydir') # This allows you to access anything previously saved into mydir/
+    @magicdir(dir='mydir')
     @step
     def end(self):
         #highlight-start
