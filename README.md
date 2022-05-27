@@ -1,8 +1,6 @@
-# Outerbounds Docs Code Snippets
+# Outerbounds How-To Articles 👋
 
-Code Snippets For [The Outerbounds Docs](https://outerbounds.com/docs)
+Welcome to our repository for our [pages on doing common machine learning and data science tasks with Metaflow](https://outerbounds.com/docs).
+If you have questions about Metaflow and the MLOps ecosystem that you think would fit, please do raise them as an issue in this repo. 
 
-## To Update
-
-1. Clone the private repo [outerbounds/docs](https://github.com/outerbounds/docs) in an adajacent sibling to this repo, and switch to the branch that you would like to copy.
-2. Run `make all`
+You can also come and chat with us directly on the Metaflow community slack [here](http://slack.outerbounds.co/). We hope to see you there!
